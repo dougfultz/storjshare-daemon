@@ -1,0 +1,11 @@
+# Sourced from https://docs.storj.io/v1.0/discuss/59032c4f95200b0f007609db
+[Unit]
+Description=Storj Share Daemon
+After=network.target
+
+[Service]
+User=storjshare 
+ExecStart=/usr/bin/storjshare-daemon -F
+
+[Install]
+WantedBy=default.target
