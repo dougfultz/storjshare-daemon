@@ -1,0 +1,10 @@
+[Unit]
+Description=Storj Share Start
+Requires=storjshare-daemon.service
+
+[Service]
+User=storjshare
+ExecStart=/usr/bin/storjshare-start --config /path/to/storj.json
+
+[Install]
+WantedBy=default.target
